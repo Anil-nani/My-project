@@ -1,0 +1,178 @@
+ * {
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+
+ body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    background: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .pad-0 {
+    padding: 0%;
+ }
+
+ .welcome-block {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px 40px 40px 40px;
+ }
+
+ .logo-box {
+    text-align: center;
+ }
+
+ .logo-box .logo {
+    width: 100px;
+    height: auto;
+ }
+
+ .logo-box .logo-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 3px;
+ }
+
+ .logo-box .logo-content {
+    color: #fff;
+    font-size: 12px;
+ }
+
+ .list-box {
+    margin-top: 89px;
+ }
+
+ .list-box .list li {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+ }
+
+
+ .contact-block {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 50px 50px 30px 50px;
+ }
+
+ .login-box .login {
+    font-size: 24px;
+    text-decoration: none;
+    color: #4B99CD;
+    font-weight: 500;
+ }
+
+ .login-box .sep {
+    font-size: 16px;
+    color: #ccc;
+    font-weight: 500;
+ }
+
+ .login-box .signup {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+ }
+
+ .account-box .account {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 12px;
+ }
+
+ .form-box {
+    padding: 30px 0 0 0;
+ }
+
+ .form-box .form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+ }
+
+ .form-box .form-control:focus {
+    box-shadow: none;
+ }
+
+ .form-box .form-control::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    color: #444;
+ }
+
+ .form-box .forgot-pw {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 500;
+    text-decoration: none;
+    top: -43px;
+    text-align: end;
+ }
+
+ .form-box .btn-primary {
+    text-transform: uppercase;
+    color: #fff;
+    background: #4B99CD;
+    border-radius: 18px;
+    font-size: 12px;
+    padding: 5px 25px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #4B99CD;
+ }
+ .form-box .login-with-box {
+    display: flex;
+    justify-content: end;
+ }
+
+ .form-box .login-with {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .form-box .login-with span {
+    display: inline-block;
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: end;
+    margin-right: 8px;
+ }
+
+ .form-box .login-with a {
+    text-decoration: none;
+}
+
+ .form-box .login-with .fa-google-plus-g {
+    color: #ff0000;
+    font-size: 22px;
+    margin-right: 5px;
+ }
+
+ .form-box .login-with .fa-twitter {
+    color: #4B99CD;
+    font-size: 22px;
+ }
+
+

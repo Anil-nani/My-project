@@ -1,0 +1,294 @@
+#img{
+    width: 80px;
+}
+#col{
+    color: purple;
+}
+
+.back{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/725/774/379/misty-purple-reflection-beautiful-colours-lake-lovely-mountains-nature-ocean-other-paradise-pink-pur-hd-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:100px ;
+}
+#sec{
+padding-top:100px ;
+}
+.bar{
+    color: black;
+}
+#ic{
+    color: black;
+}
+#photo{
+    padding: 50px;
+    width: 45%;
+    height: 50%;
+}
+#ser{
+    color: blue;
+    text-align: center;
+}
+#pe{
+    color: black;
+    text-align: center;
+}
+.sec1{
+    padding: 70px 0;
+}
+#back{
+    border-radius: 90%;
+    height: 100px;
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -60px;
+    margin-left:90px;
+    border: 5px solid white;
+}
+.font{
+    padding:30px;
+    background-color:lightseagreen;
+}
+#font{
+color: lightseagreen;
+}
+#cm{
+    visibility: visible;
+}
+.arjun{
+    padding-top: 60px;
+}
+#crr{
+    color:lightseagreen
+}
+.font2{
+    padding:30px;
+    background-color: red;
+}
+#font2{
+    color:red;
+}
+.font3{
+
+    padding:30px;
+    background-color:orange;
+}
+#font3{
+    color:orange
+}
+.font4{
+    
+    padding:30px;
+    background-color:green;
+}
+#font4{
+    color:green
+}
+.font5{
+    
+    padding:30px;
+    background-color:purple;
+}
+#font5{
+    color:purple;
+}
+.font6{
+    
+    padding:30px;
+    background-color:red;
+}
+#font6{
+    color:red;
+}
+
+.font7{
+    
+    padding:30px;
+    background-color:black;
+}
+#font7{
+    color:black;
+}
+.yel{
+    background-color: orange;
+    padding: 50px;
+ 
+}
+.yel-body{
+    background-color: white;
+    padding: 40px;
+}
+.yel-body-part-2{
+    margin-top: 60px;
+}
+#yel-part-2-head{
+    padding-top: 40px;
+    color: orangered;
+}
+#wh{
+    color: white;
+    text-align: center;
+    padding: 70px 0}
+     .run{
+        background-color: white;
+        margin-top: 60px;
+        height: 700px;
+        width: 100px;
+        padding: 70px 0;
+    }
+    #nav{
+        width: 500px;
+        height: 250px;
+       
+        
+    }
+.pad{
+    padding: 50px 0;
+}
+.list{
+    list-style-type:none;
+}
+.nav-tab{
+    display: contents;
+    display: flex;
+    justify-content: center;
+    ;
+}
+.nv{
+    display: contents;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+#pc{
+    padding-top: 40px;
+}
+#bt{
+    background-color:lightseagreen;
+    color:white;
+    padding:10px;
+    width: 62px;
+    
+}
+#nn{
+    padding-top: 60px;
+    margin-left: 30px;
+}
+#if{
+    padding-left: 140px;
+    color:black;
+}
+#eer{
+    padding-left: 20px;
+    color:black;
+}
+#karthik{
+    color:orange;
+    margin-top: 80px;
+}
+#adm{
+    text-align: center;
+    color:purple;
+}
+#s1{
+    padding-top:70px;
+}
+#se2{
+    padding-top:40px;
+}
+.ble{
+    background-color:lightskyblue;
+    padding: 50px;
+ 
+}
+.se5{
+    background-color: purple;
+    margin-top:40px;
+}
+#anr{
+    text-align: center;
+    color:white
+}
+.box-parent{
+    padding: 20px;
+
+}
+.box-child{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    border:  solid gray;
+    border-shadow:2px 4px 8px gray;
+    background-color: white;
+}
+#iron{
+    color:purple;
+    font-size:4em;
+}
+#iron2{
+color:green;
+font-size:4em;
+}
+
+#iron3{
+color:maroon;
+font-size:4em;
+}
+
+#iron4{
+color:skyblue;
+font-size:4em;
+}
+#bro{
+    text-align: center;
+    color:white;
+    padding:40px;
+}
+.sec6{
+    background-color:#f44336;
+    margin-top: 40px;
+}
+.box-parent2{
+    padding: 40px;
+    
+
+}
+.box-child2{
+    height: 200px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    border:  solid gray;
+    border-shadow:1px 4px 8px gray;
+    background-color: white;
+    padding-bottom: -30px;
+}
+#bomma{
+    position: relative;
+    right:1px;
+    top:40px;
+}
+#oo{
+    margin-left: 20px;
+    text-indent:60px;
+}
+#dk{
+    text-align: right;
+}
+#anr{
+    text-align: center;
+    color:white;
+    padding-top: 80px;
+}
+#text{
+    text-indent: 80px;
+}
