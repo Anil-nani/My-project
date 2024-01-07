@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="anil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<header>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-12 col-md-12">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <img src="data:image/jpeg;base64,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ddazhQTaynhCcRAUIqhfXOeXPl5TE25u3Vq7KrbLLVahuOsIUAVsqeLmh4uaL1yJEWk7BPSh7c/Hug/M2/u2y8ouAAST7TjJ9vIAfdITW7t12aqvWNZaLa1KpwlOFQQwI4Shznjbrn7oi0n1B3b3tjQaw+Wlu/hPK1tjdZtRRptXpW7rWVVVlHHLjAQfNv8AaQCeXMg5Blu2roFvpeh3dVsUo/DwglWBDLkg4yD4c597N0YprWoO7KihVL8PFhQABlQM8h1POFKuwKJsLeI6zXaQWVmvUaevVpfUQRwsfk4DDPgeFuWcjGOfIn77WOKsaLVcJaujUqzgDPijL9vdlc+bAeMuD7EpOqXWBcXKjIWHLiVscmHjjh5GZup0yWI1diK6OMMrAEMD4EHrOt6Uk0gcU3LZWr1sCrqGVlwchhyYZ5eOZVd0dt6jUavXUWupTS2KicKhSwZ7Rlz4kCsdMdTM/RbqJRldLqdTQhJPdq9boCevCLkcr8DMnYe7tWle2xGsay9g1tjsCWILkclAVebt0A6+6c9KYJuIicgREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQD//Z" alt="img" style="width: 100px; height: 100px;">
+    <div style="margin-left: 300px;">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            services
+              </a>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active actvie" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link actvie" href="#" id="black">
+              <i class="fa-solid fa-phone actvie " id="mnmnm"></i> <span>0123456789</span></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+          </li>
+          
+        </div>
+    </div>
+  </nav>
+</div>
+</div>
+</div>
+</header>
+
+<section class="anil">
+   <div class="container">
+     <div class="row">
+       <div class="col-12 col-lg-6 col-md-6 " >
+        <div id="nnr">
+           <h1>Need a profossional business consulaion? Look no futher. we are here to help!</h1>
+            <p> we offer a professional advice, guidance and actionable solucation to business expercing issues they can't deal with in-hourse</p>
+            <button id="hoo"> Get free consulaion</button>
+           <a href="https://www.sevenconsulting.com/" id="km"> <span id="aa">shoponlineguidances> </span></a>
+          </div>
+       </div>
+         <div class="col-12 col-lg-6  col-md-6">
+           <div class="img-header-img">
+             <div class="jk"></div>
+             <div class="kj"></div>
+           </div>
+      </div>
+    </div>
+
+    
+    <div class="row submain">
+      <div class="col-3 submain1" id="nnr">
+        <i class="fa-solid fa-address-book me-3" id="bbb" ></i>A team of leading industry experts
+      </div>
+    <div class="col-12 col-lg-3 col-md-3 submain1" id="nnr">
+      
+      <i class="fa-solid fa-grip me-3" id="ccc"></i>A full range of counsulting services
+
+        
+
+    </div>
+    <div class="col-lg-3 submain1" id="nnr">
+      
+      <i class="fa-regular fa-handshake me-3" id="ba"></i> Exclusive extensive online counsuting gudidess
+
+        
+
+    </div>
+    <div class="col-12 col-lg-3 col-md-3 submain1" id="nnr">
+      <i class="fa-regular fa-comments me-3" id="pppr"></i>100%free first counsultion for all  new client
+          </div>
+           </div>
+          </div>
+        
+  </section>
+
+
+  <section id="we">
+    <div class="container">
+      <div class="row" style="text-align: left">
+        <div class="col-12 col-lg-6 col-md-6" id="rrr">
+          <h3>welcome to seven counsutling</h3>
+          <h2>Risk more than others think is safe.Dream more than others think is practicle.</h2>
+          <button id="br"> Lets discuss your case</button>
+          
+          
+          </div>
+          <div class="col-12 col-lg-6 col-md-6">
+            <div id="pa">
+            <a id="kkr"><b>why chose us </b>&nbsp;&nbsp;</a>
+            <a id="kkr"> our pricncipal&nbsp;&nbsp;</a>
+            <a id="kkr">Achivement</a>
+          
+          </div>
+            <p>Aliquam errat volupat.donec placeratmetus erats couniba nastra,<br>per incepts himenases.in vel varous Supsendissesnecnec vulupate nulla iacusus
+              vulupulation nulla ilacauuls eu.class apents<br> himenose. in vel various esteu!Supsendissesnec vulipate nulla
+              iauculis eu patenti</p>
+             
+              <p>
+                Sed sagutties maxmium quam, nec larent enim laorent sed larem 
+                ipsum placerat metus ,eartc.nec vulipate nulla iause eu.class
+                apents tatic socioqu ad litary tarquent per conubia. 
+              </p>
+
+            
+        </div>
+      </div>
+        
+        </div>
+        
+</section>
+  
+<section id="we">
+  
+  
+<div class="container">
+          
+         <div class="row">
+              <div class="col-12 col-md-4 col-lg-4 box_parent">
+                <div class="box_child">
+                  <i class="fa fa-line-chart"aria-hidden="true" style="color:gold"></i>
+                  <h4>Bussnies development</h4>
+              </div>
+            </div>
+            
+            <div class="col-12 col-md-4 col-lg-4 box_parent">
+             <div class="box_child">
+                  <i class="fa-solid fa-gear" style="color:gold"></i>
+                  <h4>Bussnies opatimsition</h4>
+              </div>
+              </div>
+  
+          <div class="col-12 col-md-4 col-lg-4 box_parent">
+            <div class="box_child">
+                    <i class="fa-solid fa-chart-pie" style="color:gold"></i>
+                   <h4>marketting planning</h4>
+               </div>
+             </div>  
+          </div>
+
+
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-4 box_parent">
+              <div class="box_child">
+                <i class="fa fa-line-chart"aria-hidden="true" style="color:gold"></i>
+                <h4>Bussnies development</h4>
+            </div>
+          </div>
+
+           
+            <div class="col-12 col-md-4 col-lg-4 box_parent">
+              <div class="box_child">
+                <i class="fa-solid fa-gear" style="color:gold"></i>
+                <h4>Bussnies opatimsition</h4>
+            </div>
+            </div>
+
+          
+            <div class="col-12 col-md-4 col-lg-4 box_parent">
+              <div class="box_child">
+                  <i class="fa-solid fa-chart-pie" style="color:gold"></i>
+                 <h4>marketting planning</h4>
+             </div>
+           </div>  
+        </div>
+
+    
+</div> 
+<section id="bbbr">
+  <div class="container"  >
+    <div class="row">
+      <div class="col-12 col-lg-12 col-md-12">
+        <h3 class="text">Need a professional business consulaion? lets consulaion? lets discuss your case!</h3>
+       <a> <button id="button">Contact us online</button> </a>
+       <a id="border"><i class="fa-solid fa-phone"></i> 1-0010-22-44</a>
+
+      </div>
+    </div>
+  </div>
+ </section> 
+
+    <section id="we">
+      <div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-6 col-md-6">
+      <h4 id="gg">high level of competance.</h4>
+      <h2>our experinace will help you create a quality prouduct</h2>
+      <p>Aliquam eart voulpate metuus eatrs nec vulupatenulla ilacusslis eu.suspending potent.sed sagalitis maximum quaam,,<br>
+        nec  labbrents enim laarent sed lorem ipsum vulipuate nulla ilculls
+        suspendiness eulismad  feels nunc,vitage aliquate letus ornare.,
+
+      
+    </div>
+  
+    <div class="col-12 col-lg-6 col-md-6">  
+      <h6>online services</h6>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-warning" style="width: 50%"  > <span style="color: black;">3 years</span> </div>
+      </div>
+      <h6> Finance management</h6>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-warning" style="width: 60%"><span style="color: black;">5 years</span></div>
+      </div>
+      <h6>innvestment</h6>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-warning" style="width: 75%"><span style="color: black;">10 years</span></div>
+      </div>
+      <h6>counsuling</h6>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-warning" style="width: 100%"><span style="color: black;">12 years</span></div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+<section id="we">
+  <div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-3 col-md-3 number">
+      <h1 id="watermark">01</h1>
+      <h4>expernced specilalist</h4>
+      <p id="opacity">Qulisque in suscript rist,at<br>autctor oraic sed posuere ullamacore moseila.<br>
+        supspend elulimad felli fells <br>nunc.vilate alliquaet letus ornate.<br><p>
+         
+
+    </div>
+        <div class="col-12 col-lg-3 col-md-3 number">
+          <h1 id="watermark">02</h1>
+          <h4>stable& predicatable results</h4>
+          <p id="opacity">maruis eu ex nec felling sagitting seffciture.suspendiess euimad fellis. nunc vitage alliquate.
+          ullamcorper molesite.</p>
+       
+
+
+    </div>
+    <div class="col-12 col-lg-3 col-md-3 number">
+      <h1 id="watermark" >03</h1>
+      <h4>100%satisfaction guarante</h4>
+      <p id="opacity">maruis eu ex nec felling sagittis effciture in suscipits nis posure
+      ullamacorper molesites suspendisses eulismod</p>
+      
+
+
+    </div>
+    <div class="col-12 col-lg-3 col-md-3 number">
+      <h1 id="watermark">04</h1>
+      <h4>20+years in consulting busnies</h4>
+      <p id="opacity">sed poseures ullamacoremolesite.Suspendiness eulaismod
+      fells nunc,vitage aliqutae letus ornare ac.
+      
+    </div>
+  </div>
+</div>
+</section>
+      
+
+<section id="cccc">
+  <div class="container">
+  
+      <div class="row">
+        <div class="col-12 col-lg-12 col-md-3 request">
+          <h2 id="cv">Any questions?Request a call-back to get a <br>free analyis of your bussnies!</h2><br><br>
+            <input type="fname" id="fname" name="fname" placeholder="Enter your name">
+               <input type="fname" id="fname" name="fname" placeholder="Phone number"><br> <br>
+                   <button id="arjun"><i class="fa-solid fa-phone"> Request a call- back</i></button>
+
+
+            </div>
+          </div>
+        
+        </div>
+  </section>
+
+      
+    
+    <section id="we">
+     <div class="container">
+      <div id="ganesh">
+      <div class="row">
+        <div class=" col-12 col-lg-6 col-md-6">
+          <h5 id="nanda">why choose our company</h5><br><br>
+          <h3>Here how things are going to change<br>for your business </h3><br><br>
+          
+<ul class="margin">
+  <li id="bc"><i class="fa-solid fa-check"></i> <span id="dc"> 150-180% more loream valupat dones glavridi ipsum dolor</span></li>
+    <li id="bc"><i class="fa-solid fa-check"></i><span id="dc"> Reative volupate  donic glavinda  ipsum</span></li>
+<li id="bc"><i class="fa-solid fa-check"></i><span id="dc"> class apents tactic saciquo ad litara</span></li> 
+<li id="bc"><i class="fa-solid fa-check"></i><span id="dc"> 100-200% of dolor nulla gravinda et nulla </span></li>
+<li id="bc"><i class="fa-solid fa-check"></i><span id="dc">Ameta loream feels -dolor nulla gravnda et nulla  gravinda</span></li> 
+    </ul>    
+ 
+        </div>
+       
+        <div class="col-lg-6">
+          <div class="video_1">
+          <iframe width="400px" height="300px" src="https://www.youtube.com/embed/NLvpzSfVSGA?si=A1LAUThoO4gvv_Rd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br> <br> <br><br><br><br>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+      
+    </section>
+    
+    
+
+<section id="we">
+  <div class="container">
+    <div class="row">
+        
+      <div class="col-12 col-lg-4 col-md-4 quote_box">
+        <div class="child_quote">
+          <i class="fa-solid fa-quote-right" id="trs"></i>
+          <p>wow! commodo egesta, feuigiate<br> leo eget ipsum dolor sitvupalte<br> metus vesitibuilam ipsum.</p>
+          <h4>bernard blackwood</h4>
+          <p>seven&co-marketing</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 quote_box">
+        <div class="child_quote">
+          <i class="fa-solid fa-quote-right" id="trs"></i>
+          <p>Super 300%+lorem mequces maruis <br> et leo ipsum uliniar lorem neques.<br>thank!</p>
+          <h4>johnn richmand</h4>
+          <p>seven counsulting-excuting director</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-4 quote_box">
+        <div class="child_quote">
+          <i class="fa-solid fa-quote-right" id="trs"></i>
+          <p>loream metus velstibuulim ipsum <br> dolor sits amepts conseceter,<br> adliups eilts odiac nec urna<br> metus vestibullum. 
+           </p>
+          <h4>Alxeder Browm</h4>
+          <p>seveen creative -marketing diretor</p>
+        </div>
+      </div>
+       
+</div>
+</div>
+</section>
+      
+  
+
+  <footer id="footer">
+    <div class="container">
+      
+    
+      <div class="row">
+        <div class="col-12 col-lg-4 col-md-4 foot1">
+          <img src=data:image/jpeg;base64,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 height="80px" width="150px" style="margin-bottom: 20px;">
+          <p id="ppr">we exist to people to deliver ridicus good innvotion to the world s<br>best compain </p>
+         </div>
+
+          <div class="col-12 col-lg-4  col-md-4 foot1">
+            <p id="footaddress">contact info</p>
+            <i class="fa-solid fa-phone" id="nnr"> 1-001-2345678</i>&nbsp;
+            <p id="trs">mon- sat 8:00-21:00</p>
+            <h6 id="nnr"><i class="fa-regular fa-envelope" id="nnr"></i>&nbsp;&nbsp;info@dream-theam .com</h6>
+            <p id="trs">24/7customer support</p>
+            <h6 id="nnr"><i class="fa-regular fa-building" id="nnr"></i>&nbsp;3 Rockaway st, New Rochelle,NY 10801</h6>
+        <p id="trs">main office location</p>        
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 foot1">
+            <p  id="zzz">Recent article</p>
+            <h6 id="nnr">How to find your ideal bussnies advisor</h6>
+            <p id="trs"> march4,2020</p>
+            <h6 id="nnr">Main bussines counsulting trends 21/22</h6>
+            <p id="trs">febuary 25,2020</p>
+            <h6 id="nnr">top 6 finacial planing tricks</h6>
+            <p id="trs">februbary 18,2020</p>
+
+          </div>
+      
+      
+      </div>
+      <div id="nnr"><hr>
+      <div class="row">
+        <div class="col-12">
+       <a id="trs"><i class="fa-regular fa-copyright"></i>the7counsuting -2022 all right reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a id="manoj">&nbsp;terms&condition</a>
+      <a id="trs">&nbsp;&nbsp;&nbsp;&nbsp;cookies policy</a>
+      <div id="right">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-linkedin"></i>
+          </div>
+        
+      </div>
+    
+    </div>
+    </div>
+  
+ </footer> 
+</body>
+</html>
