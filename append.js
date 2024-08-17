@@ -1,0 +1,5 @@
+let mytext=document.createElement("P")
+let mytextConntent=document.createTextNode("this is  paragraphy using javascript dyanimics") 
+mytext.appendChild(mytextConntent)
+let mydiv =document.getElementById("thediv")
+mydiv.append(mytext)
