@@ -1,0 +1,5 @@
+let createElement =document.createElement("p")
+ mytext=document.createTextNode("HELLO THIS PARAGRAPHY CREATE DYNAMIC USING THE JS")
+createElement.appendChild(mytext)
+ const mydiv =document.querySelector("#mydiv")
+mydiv.prepend(createElement)
